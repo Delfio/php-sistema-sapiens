@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.769" y1="0.181" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.222" stop-color="#fcfcfc"/>
+      <stop offset="1" stop-color="#ececec"/>
+    </linearGradient>
+    <filter id="circulo" x="-177" y="734" width="619" height="619" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Retângulo_3" x="1759" y="922" width="286" height="286" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-background-principal">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="background-principal" clip-path="url(#clip-background-principal)">
+    <rect width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#circulo)">
+      <path id="circulo-2" data-name="circulo" d="M300.5,601a302.726,302.726,0,0,1-60.561-6.1,298.858,298.858,0,0,1-107.451-45.216A301.377,301.377,0,0,1,23.615,417.468a298.987,298.987,0,0,1-17.51-56.407,303.434,303.434,0,0,1,0-121.123A298.856,298.856,0,0,1,51.321,132.487,301.377,301.377,0,0,1,183.532,23.615a298.987,298.987,0,0,1,56.407-17.51,303.434,303.434,0,0,1,121.123,0A298.856,298.856,0,0,1,468.512,51.321,301.375,301.375,0,0,1,577.385,183.532a298.985,298.985,0,0,1,17.51,56.407,303.436,303.436,0,0,1,0,121.123,298.857,298.857,0,0,1-45.216,107.451A301.376,301.376,0,0,1,417.468,577.385a298.984,298.984,0,0,1-56.407,17.51A302.727,302.727,0,0,1,300.5,601Zm0-536.475C170.383,64.525,64.525,170.383,64.525,300.5S170.383,536.475,300.5,536.475,536.475,430.617,536.475,300.5,430.617,64.525,300.5,64.525Z" transform="translate(-168 735)" fill="#005bea"/>
+    </g>
+    <path id="circulo-3" data-name="circulo" d="M115.5,231a116.355,116.355,0,0,1-23.277-2.347,114.869,114.869,0,0,1-41.3-17.379A115.837,115.837,0,0,1,9.077,160.458a114.918,114.918,0,0,1-6.73-21.681,116.628,116.628,0,0,1,0-46.555,114.868,114.868,0,0,1,17.379-41.3A115.837,115.837,0,0,1,70.542,9.077a114.919,114.919,0,0,1,21.681-6.73,116.628,116.628,0,0,1,46.555,0,114.868,114.868,0,0,1,41.3,17.379,115.836,115.836,0,0,1,41.846,50.817,114.917,114.917,0,0,1,6.73,21.681,116.628,116.628,0,0,1,0,46.555,114.869,114.869,0,0,1-17.379,41.3,115.837,115.837,0,0,1-50.817,41.846,114.917,114.917,0,0,1-21.681,6.73A116.355,116.355,0,0,1,115.5,231Zm0-206.2a90.7,90.7,0,1,0,90.7,90.7A90.8,90.8,0,0,0,115.5,24.8Z" transform="translate(1508 183)" fill="#005bea"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Retângulo_3)">
+      <g id="Retângulo_3-2" data-name="Retângulo 3" transform="translate(1768 928)" fill="#febf00" stroke="#707070" stroke-width="1" opacity="0.41">
+        <rect width="268" height="268" stroke="none"/>
+        <rect x="0.5" y="0.5" width="267" height="267" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

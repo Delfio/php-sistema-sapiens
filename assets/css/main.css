@@ -1,0 +1,233 @@
+/**
+ * Copyright 2021 Delfio Francisco
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:root {
+    --main-bg-color: #005BEA;
+    --main-button-color: rgb(254,153,0);
+    --main-button-dark-color: rgb(254, 123, 0);
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: Roboto;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box !important;
+    width: 100vw;
+    height: 100vh;
+}
+
+input {
+    border-bottom: none;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+};
+
+body, input, button {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background-principal.svg');
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+div.form-principal {
+    width: 80%;
+    height: 60%;
+    max-width: 980px;
+    background-color: rgb(244, 243, 253);
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.452); 
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.452)
+}
+
+section.splash-principal {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+section.formulario-login {
+    display: flex;
+    background-color: var(--main-bg-color);
+    flex: 2;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+section.formulario-login h2 {
+    color: white;
+    font-family: Roboto;
+    font-size: 2.2em;
+}
+
+section.formulario-login form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 35px;
+    box-sizing: border-box;
+
+}
+
+div.container-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: red; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.input {
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    padding: 5px 15px 0;
+    margin: 15px 0;
+    border-radius: 25px;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+div.input input {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px 0;
+    color:rgba(0, 0, 0, 0.76);
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+
+div.forgot-password {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+div.forgot-password a{
+    outline: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+div.forgot-password a:hover {
+    color: #f0f0f0
+}
+
+div.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.buttons button {
+    font-family: Roboto;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 32, 32);
+    font-weight: bold !important;
+    
+}
+
+div.buttons a {
+    font-family: Roboto;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 32, 32);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+div.buttons button:first-child {
+    background: var(--main-button-color);
+    background: linear-gradient(90deg, rgba(254,153,0,1) 0%, rgba(251,190,1,1) 100%);
+}
+
+div.buttons a {
+    background: none;
+    border: 2px solid white;
+    color: white;
+};
+
+div.buttons button:first-child::hover {
+    background: var(--main-button-dark-color);
+    background: linear-gradient(90deg, rgb(254, 114, 0) 0%, rgb(251, 151, 1) 100%); 
+}
+
+@media (max-width: 1000px) {
+    section.splash-principal {
+        display: none;
+    };
+
+    section.formulario-login {
+        flex: 1;
+    }
+
+    div.form-principal {
+        height: 60%;
+    }
+}
